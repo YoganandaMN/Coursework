@@ -1,0 +1,26 @@
+from bs4 import BeautifulSoup
+import urllib2
+import webbrowser
+import re
+def main()
+
+
+     url=httpwww.sec.govedgarsearchedgarcompanysearch.html
+     #count=0
+     company=raw_input(Enter the Companey Name)
+     TabUrl2=httpwww.sec.govcgi-binbrowse-edgarcompany=+company+&owner=exclude&action=getcompany
+     #TabUrl2=httpwww.sec.govcgi-binbrowse-edgarcompany=intel&owner=exclude&action=getcompany
+     #webbrowser.open_new_tab(TabUrl2)
+     request=urllib2.Request(TabUrl2)
+     print urlopened
+     handle=urllib2.urlopen(request)
+     soup=BeautifulSoup(handle)
+     text=soup.get_text()
+     #print text
+     op=open(yoga.py,'wb')
+     p=op.writelines(text)
+     print (n)
+     print p
+     op.close()
+if __name__ == '__main__':
+    main()
